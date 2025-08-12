@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="30" passed="30" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-08-12T18:33:10 IST" name="Sprint4" finished-at="2025-08-12T18:33:14 IST" duration-ms="4384">
+    <groups>
+    </groups>
+    <test started-at="2025-08-12T18:33:10 IST" name="APITesting" finished-at="2025-08-12T18:33:14 IST" duration-ms="4384">
+      <class name="apitestingsuite.ProductAPITesting">
+        <test-method signature="addProduct(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@6a9cd0f8]" started-at="2025-08-12T18:33:10 IST" name="addProduct" data-provider="testData" finished-at="2025-08-12T18:33:10 IST" duration-ms="179" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"amount":15000,"name":"Mobile","id":1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addProduct -->
+        <test-method signature="addProduct(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@6a9cd0f8]" started-at="2025-08-12T18:33:10 IST" name="addProduct" data-provider="testData" finished-at="2025-08-12T18:33:10 IST" duration-ms="160" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"amount":60000,"name":"Laptop","id":2}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addProduct -->
+        <test-method signature="addProduct(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@6a9cd0f8]" started-at="2025-08-12T18:33:10 IST" name="addProduct" data-provider="testData" finished-at="2025-08-12T18:33:10 IST" duration-ms="145" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"amount":40000,"name":"SmartTv","id":3}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addProduct -->
+        <test-method signature="addProduct(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@6a9cd0f8]" started-at="2025-08-12T18:33:10 IST" name="addProduct" data-provider="testData" finished-at="2025-08-12T18:33:10 IST" duration-ms="142" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"amount":45000,"name":"TV","id":4}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addProduct -->
+        <test-method signature="addProduct(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@6a9cd0f8]" started-at="2025-08-12T18:33:10 IST" name="addProduct" data-provider="testData" finished-at="2025-08-12T18:33:11 IST" duration-ms="158" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"amount":3500,"name":"Headphone","id":5}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addProduct -->
+        <test-method signature="deleteProdcutbyId(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@6a9cd0f8]" started-at="2025-08-12T18:33:11 IST" name="deleteProdcutbyId" data-provider="testData" finished-at="2025-08-12T18:33:11 IST" duration-ms="148" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"amount":15000,"name":"Mobile","id":1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteProdcutbyId -->
+        <test-method signature="deleteProdcutbyId(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@6a9cd0f8]" started-at="2025-08-12T18:33:11 IST" name="deleteProdcutbyId" data-provider="testData" finished-at="2025-08-12T18:33:11 IST" duration-ms="146" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"amount":60000,"name":"Laptop","id":2}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteProdcutbyId -->
+        <test-method signature="deleteProdcutbyId(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@6a9cd0f8]" started-at="2025-08-12T18:33:11 IST" name="deleteProdcutbyId" data-provider="testData" finished-at="2025-08-12T18:33:11 IST" duration-ms="142" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"amount":40000,"name":"SmartTv","id":3}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteProdcutbyId -->
+        <test-method signature="deleteProdcutbyId(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@6a9cd0f8]" started-at="2025-08-12T18:33:11 IST" name="deleteProdcutbyId" data-provider="testData" finished-at="2025-08-12T18:33:11 IST" duration-ms="139" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"amount":45000,"name":"TV","id":4}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteProdcutbyId -->
+        <test-method signature="deleteProdcutbyId(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@6a9cd0f8]" started-at="2025-08-12T18:33:11 IST" name="deleteProdcutbyId" data-provider="testData" finished-at="2025-08-12T18:33:11 IST" duration-ms="143" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"amount":3500,"name":"Headphone","id":5}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteProdcutbyId -->
+        <test-method signature="updateProduct(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@6a9cd0f8]" started-at="2025-08-12T18:33:11 IST" name="updateProduct" data-provider="testData" finished-at="2025-08-12T18:33:11 IST" duration-ms="138" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"amount":15000,"name":"Mobile","id":1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateProduct -->
+        <test-method signature="updateProduct(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@6a9cd0f8]" started-at="2025-08-12T18:33:11 IST" name="updateProduct" data-provider="testData" finished-at="2025-08-12T18:33:12 IST" duration-ms="140" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"amount":60000,"name":"Laptop","id":2}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateProduct -->
+        <test-method signature="updateProduct(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@6a9cd0f8]" started-at="2025-08-12T18:33:12 IST" name="updateProduct" data-provider="testData" finished-at="2025-08-12T18:33:12 IST" duration-ms="148" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"amount":40000,"name":"SmartTv","id":3}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateProduct -->
+        <test-method signature="updateProduct(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@6a9cd0f8]" started-at="2025-08-12T18:33:12 IST" name="updateProduct" data-provider="testData" finished-at="2025-08-12T18:33:12 IST" duration-ms="152" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"amount":45000,"name":"TV","id":4}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateProduct -->
+        <test-method signature="updateProduct(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@6a9cd0f8]" started-at="2025-08-12T18:33:12 IST" name="updateProduct" data-provider="testData" finished-at="2025-08-12T18:33:12 IST" duration-ms="165" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"amount":3500,"name":"Headphone","id":5}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateProduct -->
+        <test-method signature="viewAllProducts(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@6a9cd0f8]" started-at="2025-08-12T18:33:12 IST" name="viewAllProducts" data-provider="testData" finished-at="2025-08-12T18:33:12 IST" duration-ms="146" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"amount":15000,"name":"Mobile","id":1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viewAllProducts -->
+        <test-method signature="viewAllProducts(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@6a9cd0f8]" started-at="2025-08-12T18:33:12 IST" name="viewAllProducts" data-provider="testData" finished-at="2025-08-12T18:33:12 IST" duration-ms="138" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"amount":60000,"name":"Laptop","id":2}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viewAllProducts -->
+        <test-method signature="viewAllProducts(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@6a9cd0f8]" started-at="2025-08-12T18:33:12 IST" name="viewAllProducts" data-provider="testData" finished-at="2025-08-12T18:33:12 IST" duration-ms="156" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"amount":40000,"name":"SmartTv","id":3}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viewAllProducts -->
+        <test-method signature="viewAllProducts(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@6a9cd0f8]" started-at="2025-08-12T18:33:12 IST" name="viewAllProducts" data-provider="testData" finished-at="2025-08-12T18:33:13 IST" duration-ms="138" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"amount":45000,"name":"TV","id":4}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viewAllProducts -->
+        <test-method signature="viewAllProducts(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@6a9cd0f8]" started-at="2025-08-12T18:33:13 IST" name="viewAllProducts" data-provider="testData" finished-at="2025-08-12T18:33:13 IST" duration-ms="136" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"amount":3500,"name":"Headphone","id":5}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viewAllProducts -->
+        <test-method signature="viewProductbyId(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@6a9cd0f8]" started-at="2025-08-12T18:33:13 IST" name="viewProductbyId" data-provider="testData" finished-at="2025-08-12T18:33:13 IST" duration-ms="139" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"amount":15000,"name":"Mobile","id":1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viewProductbyId -->
+        <test-method signature="viewProductbyId(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@6a9cd0f8]" started-at="2025-08-12T18:33:13 IST" name="viewProductbyId" data-provider="testData" finished-at="2025-08-12T18:33:13 IST" duration-ms="138" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"amount":60000,"name":"Laptop","id":2}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viewProductbyId -->
+        <test-method signature="viewProductbyId(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@6a9cd0f8]" started-at="2025-08-12T18:33:13 IST" name="viewProductbyId" data-provider="testData" finished-at="2025-08-12T18:33:13 IST" duration-ms="141" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"amount":40000,"name":"SmartTv","id":3}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viewProductbyId -->
+        <test-method signature="viewProductbyId(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@6a9cd0f8]" started-at="2025-08-12T18:33:13 IST" name="viewProductbyId" data-provider="testData" finished-at="2025-08-12T18:33:13 IST" duration-ms="133" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"amount":45000,"name":"TV","id":4}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viewProductbyId -->
+        <test-method signature="viewProductbyId(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@6a9cd0f8]" started-at="2025-08-12T18:33:13 IST" name="viewProductbyId" data-provider="testData" finished-at="2025-08-12T18:33:13 IST" duration-ms="141" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"amount":3500,"name":"Headphone","id":5}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viewProductbyId -->
+        <test-method signature="viewProductbyName(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@6a9cd0f8]" started-at="2025-08-12T18:33:13 IST" name="viewProductbyName" data-provider="testData" finished-at="2025-08-12T18:33:14 IST" duration-ms="144" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"amount":15000,"name":"Mobile","id":1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viewProductbyName -->
+        <test-method signature="viewProductbyName(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@6a9cd0f8]" started-at="2025-08-12T18:33:14 IST" name="viewProductbyName" data-provider="testData" finished-at="2025-08-12T18:33:14 IST" duration-ms="139" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"amount":60000,"name":"Laptop","id":2}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viewProductbyName -->
+        <test-method signature="viewProductbyName(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@6a9cd0f8]" started-at="2025-08-12T18:33:14 IST" name="viewProductbyName" data-provider="testData" finished-at="2025-08-12T18:33:14 IST" duration-ms="139" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"amount":40000,"name":"SmartTv","id":3}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viewProductbyName -->
+        <test-method signature="viewProductbyName(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@6a9cd0f8]" started-at="2025-08-12T18:33:14 IST" name="viewProductbyName" data-provider="testData" finished-at="2025-08-12T18:33:14 IST" duration-ms="136" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"amount":45000,"name":"TV","id":4}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viewProductbyName -->
+        <test-method signature="viewProductbyName(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@6a9cd0f8]" started-at="2025-08-12T18:33:14 IST" name="viewProductbyName" data-provider="testData" finished-at="2025-08-12T18:33:14 IST" duration-ms="132" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"amount":3500,"name":"Headphone","id":5}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viewProductbyName -->
+      </class> <!-- apitestingsuite.ProductAPITesting -->
+    </test> <!-- APITesting -->
+  </suite> <!-- Sprint4 -->
+</testng-results>

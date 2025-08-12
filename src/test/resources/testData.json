@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "name": "Mobile",
+    "amount": 15000
+  },
+  {
+    "id": 2,
+    "name": "Laptop",
+    "amount": 60000
+  },
+  {
+    "id": 3,
+    "name": "SmartTv",
+    "amount": 40000
+  },
+  {
+    "id": 4,
+    "name": "TV",
+    "amount": 45000
+  },
+  {
+    "id": 5,
+    "name": "Headphone",
+    "amount": 3500
+  }
+]
