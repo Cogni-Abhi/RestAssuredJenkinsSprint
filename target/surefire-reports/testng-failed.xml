@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Sprint4]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="APITesting(failed)" verbose="0">
+    <classes>
+      <class name="apitestingsuite.ProductAPITesting">
+        <methods>
+          <include name="viewAllProducts"/>
+          <include name="deleteProduct"/>
+        </methods>
+      </class> <!-- apitestingsuite.ProductAPITesting -->
+    </classes>
+  </test> <!-- APITesting(failed) -->
+</suite> <!-- Failed suite [Sprint4] -->

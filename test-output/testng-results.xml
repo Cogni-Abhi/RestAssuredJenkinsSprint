@@ -2,12 +2,16 @@
 <testng-results ignored="0" total="30" passed="30" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-12T00:25:32 IST" name="Default suite" finished-at="2025-08-12T00:25:37 IST" duration-ms="4523">
+  <suite started-at="2025-08-13T09:27:18 IST" name="Sprint4" finished-at="2025-08-13T09:27:22 IST" duration-ms="4672">
     <groups>
     </groups>
-    <test started-at="2025-08-12T00:25:32 IST" name="Default test" finished-at="2025-08-12T00:25:37 IST" duration-ms="4523">
+    <test started-at="2025-08-13T09:27:18 IST" name="APITesting" finished-at="2025-08-13T09:27:22 IST" duration-ms="4672">
       <class name="apitestingsuite.ProductAPITesting">
-        <test-method signature="addProduct(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@3bf54172]" started-at="2025-08-12T00:25:32 IST" name="addProduct" data-provider="testData" finished-at="2025-08-12T00:25:32 IST" duration-ms="164" status="PASS">
+        <test-method is-config="true" signature="setupReport()[pri:0, instance:apitestingsuite.ProductAPITesting@7ec95456]" started-at="2025-08-13T09:27:18 IST" name="setupReport" finished-at="2025-08-13T09:27:18 IST" duration-ms="98" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupReport -->
+        <test-method signature="addProduct(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@7ec95456]" started-at="2025-08-13T09:27:18 IST" name="addProduct" data-provider="testData" finished-at="2025-08-13T09:27:18 IST" duration-ms="165" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,7 +22,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addProduct -->
-        <test-method signature="addProduct(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@3bf54172]" started-at="2025-08-12T00:25:32 IST" name="addProduct" data-provider="testData" finished-at="2025-08-12T00:25:33 IST" duration-ms="144" status="PASS">
+        <test-method signature="addProduct(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@7ec95456]" started-at="2025-08-13T09:27:18 IST" name="addProduct" data-provider="testData" finished-at="2025-08-13T09:27:18 IST" duration-ms="149" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -29,7 +33,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addProduct -->
-        <test-method signature="addProduct(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@3bf54172]" started-at="2025-08-12T00:25:33 IST" name="addProduct" data-provider="testData" finished-at="2025-08-12T00:25:33 IST" duration-ms="135" status="PASS">
+        <test-method signature="addProduct(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@7ec95456]" started-at="2025-08-13T09:27:18 IST" name="addProduct" data-provider="testData" finished-at="2025-08-13T09:27:18 IST" duration-ms="149" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -40,7 +44,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addProduct -->
-        <test-method signature="addProduct(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@3bf54172]" started-at="2025-08-12T00:25:33 IST" name="addProduct" data-provider="testData" finished-at="2025-08-12T00:25:33 IST" duration-ms="138" status="PASS">
+        <test-method signature="addProduct(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@7ec95456]" started-at="2025-08-13T09:27:18 IST" name="addProduct" data-provider="testData" finished-at="2025-08-13T09:27:18 IST" duration-ms="148" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -51,7 +55,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addProduct -->
-        <test-method signature="addProduct(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@3bf54172]" started-at="2025-08-12T00:25:33 IST" name="addProduct" data-provider="testData" finished-at="2025-08-12T00:25:33 IST" duration-ms="139" status="PASS">
+        <test-method signature="addProduct(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@7ec95456]" started-at="2025-08-13T09:27:18 IST" name="addProduct" data-provider="testData" finished-at="2025-08-13T09:27:18 IST" duration-ms="154" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -62,7 +66,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addProduct -->
-        <test-method signature="deleteProdcutbyId(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@3bf54172]" started-at="2025-08-12T00:25:33 IST" name="deleteProdcutbyId" data-provider="testData" finished-at="2025-08-12T00:25:33 IST" duration-ms="152" status="PASS">
+        <test-method signature="deleteProdcutbyId(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@7ec95456]" started-at="2025-08-13T09:27:18 IST" name="deleteProdcutbyId" data-provider="testData" finished-at="2025-08-13T09:27:19 IST" duration-ms="153" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -73,7 +77,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteProdcutbyId -->
-        <test-method signature="deleteProdcutbyId(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@3bf54172]" started-at="2025-08-12T00:25:33 IST" name="deleteProdcutbyId" data-provider="testData" finished-at="2025-08-12T00:25:33 IST" duration-ms="138" status="PASS">
+        <test-method signature="deleteProdcutbyId(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@7ec95456]" started-at="2025-08-13T09:27:19 IST" name="deleteProdcutbyId" data-provider="testData" finished-at="2025-08-13T09:27:19 IST" duration-ms="136" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -84,7 +88,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteProdcutbyId -->
-        <test-method signature="deleteProdcutbyId(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@3bf54172]" started-at="2025-08-12T00:25:33 IST" name="deleteProdcutbyId" data-provider="testData" finished-at="2025-08-12T00:25:33 IST" duration-ms="136" status="PASS">
+        <test-method signature="deleteProdcutbyId(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@7ec95456]" started-at="2025-08-13T09:27:19 IST" name="deleteProdcutbyId" data-provider="testData" finished-at="2025-08-13T09:27:19 IST" duration-ms="144" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -95,7 +99,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteProdcutbyId -->
-        <test-method signature="deleteProdcutbyId(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@3bf54172]" started-at="2025-08-12T00:25:33 IST" name="deleteProdcutbyId" data-provider="testData" finished-at="2025-08-12T00:25:34 IST" duration-ms="140" status="PASS">
+        <test-method signature="deleteProdcutbyId(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@7ec95456]" started-at="2025-08-13T09:27:19 IST" name="deleteProdcutbyId" data-provider="testData" finished-at="2025-08-13T09:27:19 IST" duration-ms="147" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -106,7 +110,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteProdcutbyId -->
-        <test-method signature="deleteProdcutbyId(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@3bf54172]" started-at="2025-08-12T00:25:34 IST" name="deleteProdcutbyId" data-provider="testData" finished-at="2025-08-12T00:25:34 IST" duration-ms="127" status="PASS">
+        <test-method signature="deleteProdcutbyId(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@7ec95456]" started-at="2025-08-13T09:27:19 IST" name="deleteProdcutbyId" data-provider="testData" finished-at="2025-08-13T09:27:19 IST" duration-ms="139" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -117,7 +121,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteProdcutbyId -->
-        <test-method signature="updateProduct(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@3bf54172]" started-at="2025-08-12T00:25:34 IST" name="updateProduct" data-provider="testData" finished-at="2025-08-12T00:25:34 IST" duration-ms="136" status="PASS">
+        <test-method signature="updateProduct(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@7ec95456]" started-at="2025-08-13T09:27:19 IST" name="updateProduct" data-provider="testData" finished-at="2025-08-13T09:27:19 IST" duration-ms="147" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -128,7 +132,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateProduct -->
-        <test-method signature="updateProduct(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@3bf54172]" started-at="2025-08-12T00:25:34 IST" name="updateProduct" data-provider="testData" finished-at="2025-08-12T00:25:34 IST" duration-ms="134" status="PASS">
+        <test-method signature="updateProduct(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@7ec95456]" started-at="2025-08-13T09:27:19 IST" name="updateProduct" data-provider="testData" finished-at="2025-08-13T09:27:19 IST" duration-ms="161" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -139,7 +143,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateProduct -->
-        <test-method signature="updateProduct(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@3bf54172]" started-at="2025-08-12T00:25:34 IST" name="updateProduct" data-provider="testData" finished-at="2025-08-12T00:25:34 IST" duration-ms="136" status="PASS">
+        <test-method signature="updateProduct(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@7ec95456]" started-at="2025-08-13T09:27:19 IST" name="updateProduct" data-provider="testData" finished-at="2025-08-13T09:27:20 IST" duration-ms="139" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -150,7 +154,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateProduct -->
-        <test-method signature="updateProduct(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@3bf54172]" started-at="2025-08-12T00:25:34 IST" name="updateProduct" data-provider="testData" finished-at="2025-08-12T00:25:34 IST" duration-ms="139" status="PASS">
+        <test-method signature="updateProduct(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@7ec95456]" started-at="2025-08-13T09:27:20 IST" name="updateProduct" data-provider="testData" finished-at="2025-08-13T09:27:20 IST" duration-ms="146" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -161,7 +165,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateProduct -->
-        <test-method signature="updateProduct(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@3bf54172]" started-at="2025-08-12T00:25:34 IST" name="updateProduct" data-provider="testData" finished-at="2025-08-12T00:25:34 IST" duration-ms="139" status="PASS">
+        <test-method signature="updateProduct(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@7ec95456]" started-at="2025-08-13T09:27:20 IST" name="updateProduct" data-provider="testData" finished-at="2025-08-13T09:27:20 IST" duration-ms="140" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -172,7 +176,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateProduct -->
-        <test-method signature="viewAllProducts(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@3bf54172]" started-at="2025-08-12T00:25:34 IST" name="viewAllProducts" data-provider="testData" finished-at="2025-08-12T00:25:35 IST" duration-ms="134" status="PASS">
+        <test-method signature="viewAllProducts(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@7ec95456]" started-at="2025-08-13T09:27:20 IST" name="viewAllProducts" data-provider="testData" finished-at="2025-08-13T09:27:20 IST" duration-ms="137" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -183,7 +187,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- viewAllProducts -->
-        <test-method signature="viewAllProducts(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@3bf54172]" started-at="2025-08-12T00:25:35 IST" name="viewAllProducts" data-provider="testData" finished-at="2025-08-12T00:25:35 IST" duration-ms="134" status="PASS">
+        <test-method signature="viewAllProducts(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@7ec95456]" started-at="2025-08-13T09:27:20 IST" name="viewAllProducts" data-provider="testData" finished-at="2025-08-13T09:27:20 IST" duration-ms="145" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -194,7 +198,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- viewAllProducts -->
-        <test-method signature="viewAllProducts(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@3bf54172]" started-at="2025-08-12T00:25:35 IST" name="viewAllProducts" data-provider="testData" finished-at="2025-08-12T00:25:35 IST" duration-ms="149" status="PASS">
+        <test-method signature="viewAllProducts(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@7ec95456]" started-at="2025-08-13T09:27:20 IST" name="viewAllProducts" data-provider="testData" finished-at="2025-08-13T09:27:20 IST" duration-ms="150" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -205,7 +209,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- viewAllProducts -->
-        <test-method signature="viewAllProducts(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@3bf54172]" started-at="2025-08-12T00:25:35 IST" name="viewAllProducts" data-provider="testData" finished-at="2025-08-12T00:25:35 IST" duration-ms="129" status="PASS">
+        <test-method signature="viewAllProducts(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@7ec95456]" started-at="2025-08-13T09:27:20 IST" name="viewAllProducts" data-provider="testData" finished-at="2025-08-13T09:27:20 IST" duration-ms="138" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -216,7 +220,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- viewAllProducts -->
-        <test-method signature="viewAllProducts(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@3bf54172]" started-at="2025-08-12T00:25:35 IST" name="viewAllProducts" data-provider="testData" finished-at="2025-08-12T00:25:35 IST" duration-ms="135" status="PASS">
+        <test-method signature="viewAllProducts(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@7ec95456]" started-at="2025-08-13T09:27:20 IST" name="viewAllProducts" data-provider="testData" finished-at="2025-08-13T09:27:21 IST" duration-ms="150" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -227,7 +231,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- viewAllProducts -->
-        <test-method signature="viewProductbyId(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@3bf54172]" started-at="2025-08-12T00:25:35 IST" name="viewProductbyId" data-provider="testData" finished-at="2025-08-12T00:25:35 IST" duration-ms="137" status="PASS">
+        <test-method signature="viewProductbyId(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@7ec95456]" started-at="2025-08-13T09:27:21 IST" name="viewProductbyId" data-provider="testData" finished-at="2025-08-13T09:27:21 IST" duration-ms="135" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -238,7 +242,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- viewProductbyId -->
-        <test-method signature="viewProductbyId(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@3bf54172]" started-at="2025-08-12T00:25:35 IST" name="viewProductbyId" data-provider="testData" finished-at="2025-08-12T00:25:35 IST" duration-ms="134" status="PASS">
+        <test-method signature="viewProductbyId(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@7ec95456]" started-at="2025-08-13T09:27:21 IST" name="viewProductbyId" data-provider="testData" finished-at="2025-08-13T09:27:21 IST" duration-ms="143" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -249,7 +253,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- viewProductbyId -->
-        <test-method signature="viewProductbyId(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@3bf54172]" started-at="2025-08-12T00:25:35 IST" name="viewProductbyId" data-provider="testData" finished-at="2025-08-12T00:25:35 IST" duration-ms="168" status="PASS">
+        <test-method signature="viewProductbyId(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@7ec95456]" started-at="2025-08-13T09:27:21 IST" name="viewProductbyId" data-provider="testData" finished-at="2025-08-13T09:27:21 IST" duration-ms="143" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -260,7 +264,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- viewProductbyId -->
-        <test-method signature="viewProductbyId(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@3bf54172]" started-at="2025-08-12T00:25:35 IST" name="viewProductbyId" data-provider="testData" finished-at="2025-08-12T00:25:36 IST" duration-ms="131" status="PASS">
+        <test-method signature="viewProductbyId(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@7ec95456]" started-at="2025-08-13T09:27:21 IST" name="viewProductbyId" data-provider="testData" finished-at="2025-08-13T09:27:21 IST" duration-ms="144" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -271,7 +275,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- viewProductbyId -->
-        <test-method signature="viewProductbyId(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@3bf54172]" started-at="2025-08-12T00:25:36 IST" name="viewProductbyId" data-provider="testData" finished-at="2025-08-12T00:25:36 IST" duration-ms="438" status="PASS">
+        <test-method signature="viewProductbyId(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@7ec95456]" started-at="2025-08-13T09:27:21 IST" name="viewProductbyId" data-provider="testData" finished-at="2025-08-13T09:27:21 IST" duration-ms="140" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -282,7 +286,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- viewProductbyId -->
-        <test-method signature="viewProductbyName(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@3bf54172]" started-at="2025-08-12T00:25:36 IST" name="viewProductbyName" data-provider="testData" finished-at="2025-08-12T00:25:36 IST" duration-ms="146" status="PASS">
+        <test-method signature="viewProductbyName(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@7ec95456]" started-at="2025-08-13T09:27:21 IST" name="viewProductbyName" data-provider="testData" finished-at="2025-08-13T09:27:21 IST" duration-ms="147" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -293,7 +297,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- viewProductbyName -->
-        <test-method signature="viewProductbyName(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@3bf54172]" started-at="2025-08-12T00:25:36 IST" name="viewProductbyName" data-provider="testData" finished-at="2025-08-12T00:25:36 IST" duration-ms="128" status="PASS">
+        <test-method signature="viewProductbyName(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@7ec95456]" started-at="2025-08-13T09:27:21 IST" name="viewProductbyName" data-provider="testData" finished-at="2025-08-13T09:27:22 IST" duration-ms="155" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -304,7 +308,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- viewProductbyName -->
-        <test-method signature="viewProductbyName(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@3bf54172]" started-at="2025-08-12T00:25:36 IST" name="viewProductbyName" data-provider="testData" finished-at="2025-08-12T00:25:36 IST" duration-ms="131" status="PASS">
+        <test-method signature="viewProductbyName(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@7ec95456]" started-at="2025-08-13T09:27:22 IST" name="viewProductbyName" data-provider="testData" finished-at="2025-08-13T09:27:22 IST" duration-ms="146" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -315,7 +319,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- viewProductbyName -->
-        <test-method signature="viewProductbyName(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@3bf54172]" started-at="2025-08-12T00:25:36 IST" name="viewProductbyName" data-provider="testData" finished-at="2025-08-12T00:25:37 IST" duration-ms="133" status="PASS">
+        <test-method signature="viewProductbyName(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@7ec95456]" started-at="2025-08-13T09:27:22 IST" name="viewProductbyName" data-provider="testData" finished-at="2025-08-13T09:27:22 IST" duration-ms="138" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -326,7 +330,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- viewProductbyName -->
-        <test-method signature="viewProductbyName(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@3bf54172]" started-at="2025-08-12T00:25:37 IST" name="viewProductbyName" data-provider="testData" finished-at="2025-08-12T00:25:37 IST" duration-ms="147" status="PASS">
+        <test-method signature="viewProductbyName(org.json.JSONObject)[pri:0, instance:apitestingsuite.ProductAPITesting@7ec95456]" started-at="2025-08-13T09:27:22 IST" name="viewProductbyName" data-provider="testData" finished-at="2025-08-13T09:27:22 IST" duration-ms="149" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -337,7 +341,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- viewProductbyName -->
+        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:apitestingsuite.ProductAPITesting@7ec95456]" started-at="2025-08-13T09:27:22 IST" name="tearDownReport" finished-at="2025-08-13T09:27:22 IST" duration-ms="147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownReport -->
       </class> <!-- apitestingsuite.ProductAPITesting -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- APITesting -->
+  </suite> <!-- Sprint4 -->
 </testng-results>

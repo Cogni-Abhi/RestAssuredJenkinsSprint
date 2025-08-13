@@ -1,7 +1,9 @@
 package apitestingsuite;
 
 import org.json.JSONObject;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
+import com.aventstack.extentreports.*;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
@@ -14,13 +16,28 @@ import java.util.Map;
 
 public class ProductAPITesting extends ReponseSetup {
     private String accessToken;
+    private static ExtentReports extent;
+    private static ExtentTest test;
 
     public ProductAPITesting() {
         accessToken = AuthAccessCode.getAccessToken("user1", "pass123");
     }
 
+    @BeforeClass
+    public void setupReport() {
+        ExtentSparkReporter spark = new ExtentSparkReporter("./extentReport/ProductAPIReport.html");
+        extent = new ExtentReports();
+        extent.attachReporter(spark);
+    }
+
+    @AfterClass
+    public void tearDownReport() {
+        extent.flush();
+    }
+
     @Test(dataProvider = "testData", dataProviderClass = ProductAPIDataProvider.class)
     public void addProduct(JSONObject product) {
+        test = extent.createTest("Add Product - " + product.getString("name"));
         setup();
         String requestBody = product.toString();
 
@@ -36,11 +53,11 @@ public class ProductAPITesting extends ReponseSetup {
                 .response();
 
         int statusCode = response.getStatusCode();
-        String contentType = response.getHeader("Content-Type");
+        logTestResult(test, statusCode, response);
 
         if (statusCode == 200) {
             assertThat("Status code should be 200", statusCode, equalTo(200));
-            assertThat("Content-Type should be JSON", contentType, containsString("application/json"));
+            assertThat("Content-Type should be JSON", response.getHeader("Content-Type"), containsString("application/json"));
             List<Map<String, String>> products = response.jsonPath().getList("");
             Map<String, Object> expectedProduct = product.toMap();
             expectedProduct.replaceAll((k, v) -> String.valueOf(v)); 
@@ -55,6 +72,7 @@ public class ProductAPITesting extends ReponseSetup {
 
     @Test(dataProvider = "testData", dataProviderClass = ProductAPIDataProvider.class)
     public void viewAllProducts(JSONObject product) {
+        test = extent.createTest("View All Products");
         setup();
         Response response = reqSpec
                 .header("Authorization", accessToken)
@@ -65,11 +83,11 @@ public class ProductAPITesting extends ReponseSetup {
                 .response();
 
         int statusCode = response.getStatusCode();
-        String contentType = response.getHeader("Content-Type");
+        logTestResult(test, statusCode, response);
 
         if (statusCode == 200) {
             assertThat(statusCode, equalTo(200));
-            assertThat(contentType, containsString("application/json"));
+            assertThat(response.getHeader("Content-Type"), containsString("application/json"));
             assertThat("Response should be a JSON array", response.jsonPath().getList("") instanceof List, equalTo(true));
             assertThat("Response JSON length should be 3", response.jsonPath().getList("").size(), equalTo(3));
         } else if (statusCode == 400 || statusCode == 403 || statusCode == 404 || statusCode == 415) {
@@ -81,6 +99,7 @@ public class ProductAPITesting extends ReponseSetup {
 
     @Test(dataProvider = "testData", dataProviderClass = ProductAPIDataProvider.class)
     public void viewProductbyId(JSONObject product) {
+        test = extent.createTest("View Product by ID - " + product.getInt("id"));
         setup();
         int id = product.getInt("id");
 
@@ -93,11 +112,11 @@ public class ProductAPITesting extends ReponseSetup {
                 .response();
 
         int statusCode = response.getStatusCode();
-        String contentType = response.getHeader("Content-Type");
+        logTestResult(test, statusCode, response);
 
         if (statusCode == 200) {
             assertThat(statusCode, equalTo(200));
-            assertThat(contentType, containsString("application/json"));
+            assertThat(response.getHeader("Content-Type"), containsString("application/json"));
             assertThat("ID should be "+id, response.jsonPath().getString("id"), equalTo(id+""));
         } else if (statusCode == 400 || statusCode == 403 || statusCode == 404 || statusCode == 415) {
             assertThat(response.asString(), containsString("error"));
@@ -108,6 +127,7 @@ public class ProductAPITesting extends ReponseSetup {
 
     @Test(dataProvider = "testData", dataProviderClass = ProductAPIDataProvider.class)
     public void viewProductbyName(JSONObject product) {
+        test = extent.createTest("View Product by Name - " + product.getString("name"));
         setup();
         String name = product.getString("name");
 
@@ -121,11 +141,11 @@ public class ProductAPITesting extends ReponseSetup {
                 .response();
 
         int statusCode = response.getStatusCode();
-        String contentType = response.getHeader("Content-Type");
+        logTestResult(test, statusCode, response);
 
         if (statusCode == 200) {
             assertThat(statusCode, equalTo(200));
-            assertThat(contentType, containsString("application/json"));
+            assertThat(response.getHeader("Content-Type"), containsString("application/json"));
             assertThat("Name should be "+name, response.jsonPath().getString("name"), equalTo(name));
         } else if (statusCode == 400 || statusCode == 403 || statusCode == 404 || statusCode == 415) {
             assertThat(response.asString(), containsString("error"));
@@ -136,6 +156,7 @@ public class ProductAPITesting extends ReponseSetup {
 
     @Test(dataProvider = "testData", dataProviderClass = ProductAPIDataProvider.class)
     public void updateProduct(JSONObject product) {
+        test = extent.createTest("Update Product - " + product.getString("name"));
         setup();
         String requestBody = product.toString();
         int id = product.getInt("id");
@@ -151,11 +172,11 @@ public class ProductAPITesting extends ReponseSetup {
                 .response();
 
         int statusCode = response.getStatusCode();
-        String contentType = response.getHeader("Content-Type");
+        logTestResult(test, statusCode, response);
 
         if (statusCode == 200) {
             assertThat(statusCode, equalTo(200));
-            assertThat(contentType, containsString("application/json"));
+            assertThat(response.getHeader("Content-Type"), containsString("application/json"));
             List<Map<String, String>> products = response.jsonPath().getList("");
             Map<String, Object> expectedProduct = product.toMap();
             expectedProduct.replaceAll((k, v) -> String.valueOf(v)); 
@@ -170,6 +191,7 @@ public class ProductAPITesting extends ReponseSetup {
 
     @Test(dataProvider = "testData", dataProviderClass = ProductAPIDataProvider.class)
     public void deleteProdcutbyId(JSONObject product) {
+        test = extent.createTest("Delete Product by ID - " + product.getInt("id"));
         setup();
         int id = product.getInt("id");
 
@@ -182,21 +204,29 @@ public class ProductAPITesting extends ReponseSetup {
                 .response();
 
         int statusCode = response.getStatusCode();
-        String contentType = response.getHeader("Content-Type");
+        logTestResult(test, statusCode, response);
 
         if (statusCode == 200) {
             assertThat(statusCode, equalTo(200));
-            assertThat(contentType, containsString("application/json"));
+            assertThat(response.getHeader("Content-Type"), containsString("application/json"));
             List<Map<String, String>> products = response.jsonPath().getList("");
             Map<String, Object> expectedProduct = product.toMap();
             expectedProduct.replaceAll((k, v) -> String.valueOf(v)); 
             boolean found = products.stream().anyMatch(p -> p.equals(expectedProduct));
             assertThat("Product should not be present in response and updated", found, equalTo(false));
-            
         } else if (statusCode == 400 || statusCode == 403 || statusCode == 404 || statusCode == 415) {
             assertThat(response.asString(), containsString("error"));
         } else {
             throw new AssertionError("Unexpected status: " + statusCode + "\nResponse: " + response.asPrettyString());
+        }
+    }
+
+    // Helper method for logging
+    private void logTestResult(ExtentTest test, int statusCode, Response response) {
+        if (statusCode == 200 || statusCode == 400 || statusCode == 403 || statusCode == 404 || statusCode == 415) {
+            test.pass("Status Code: " + statusCode + "\nResponse: " + response.asPrettyString());
+        } else {
+            test.fail("Unexpected Status: " + statusCode + "\nResponse: " + response.asPrettyString());
         }
     }
 }
