@@ -5,7 +5,9 @@
     <classes>
       <class name="apitestingsuite.ProductAPITesting">
         <methods>
-          <include name="viewAllProducts" invocation-numbers="0 1 2 3 4"/>
+          <include name="setupReport"/>
+          <include name="tearDownReport"/>
+          <include name="viewProductbyId" invocation-numbers="3 4"/>
         </methods>
       </class> <!-- apitestingsuite.ProductAPITesting -->
     </classes>

@@ -7,6 +7,7 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
@@ -56,7 +57,6 @@ public class ProductAPITesting extends ReponseSetup {
                 .when()
                 .post("/addProduct")
                 .then()
-                .log().all()
                 .extract()
                 .response();
 
@@ -74,6 +74,7 @@ public class ProductAPITesting extends ReponseSetup {
         } else if (statusCode == 400 || statusCode == 403 || statusCode == 404 || statusCode == 415) {
             assertThat("Error body should contain 'error'", response.asString(), containsString("error"));
         } else {
+        	((RequestSpecification) response).log().all();
             throw new AssertionError("Unexpected status: " + statusCode + "\nResponse: " + response.asPrettyString());
         }
     }
@@ -87,7 +88,6 @@ public class ProductAPITesting extends ReponseSetup {
                 .when()
                 .get("/getAllProducts")
                 .then()
-                .log().all()
                 .extract()
                 .response();
 
@@ -102,6 +102,7 @@ public class ProductAPITesting extends ReponseSetup {
         } else if (statusCode == 400 || statusCode == 403 || statusCode == 404 || statusCode == 415) {
             assertThat(response.asString(), containsString("error"));
         } else {
+        	((RequestSpecification) response).log().all();
             throw new AssertionError("Unexpected status: " + statusCode + "\nResponse: " + response.asPrettyString());
         }
     }
@@ -117,7 +118,6 @@ public class ProductAPITesting extends ReponseSetup {
                 .when()
                 .get("/getProductbyId/" + id)
                 .then()
-                .log().all()
                 .extract()
                 .response();
 
@@ -128,9 +128,10 @@ public class ProductAPITesting extends ReponseSetup {
             assertThat(statusCode, equalTo(200));
             assertThat(response.getHeader("Content-Type"), containsString("application/json"));
             assertThat("ID should be "+id, response.jsonPath().getString("id"), equalTo(id+""));
-        } else if (statusCode == 400 || statusCode == 403 || statusCode == 404 || statusCode == 415) {
+        } else if (statusCode == 400 || statusCode == 403 || statusCode == 4 || statusCode == 415) {
             assertThat(response.asString(), containsString("error"));
         } else {
+        	((RequestSpecification) response).log().all();
             throw new AssertionError("Unexpected status: " + statusCode + "\nResponse: " + response.asPrettyString());
         }
     }
@@ -147,7 +148,6 @@ public class ProductAPITesting extends ReponseSetup {
                 .when()
                 .get("/viewProductByName")
                 .then()
-                .log().all()
                 .extract()
                 .response();
 
@@ -161,6 +161,7 @@ public class ProductAPITesting extends ReponseSetup {
         } else if (statusCode == 400 || statusCode == 403 || statusCode == 404 || statusCode == 415) {
             assertThat(response.asString(), containsString("error"));
         } else {
+        	((RequestSpecification) response).log().all();
             throw new AssertionError("Unexpected status: " + statusCode + "\nResponse: " + response.asPrettyString());
         }
     }
@@ -179,7 +180,6 @@ public class ProductAPITesting extends ReponseSetup {
                 .when()
                 .put("/updateProduct/" + id)
                 .then()
-                .log().all()
                 .extract()
                 .response();
 
@@ -197,6 +197,7 @@ public class ProductAPITesting extends ReponseSetup {
         } else if (statusCode == 400 || statusCode == 403 || statusCode == 404 || statusCode == 415) {
             assertThat(response.asString(), containsString("error"));
         } else {
+        	((RequestSpecification) response).log().all();
             throw new AssertionError("Unexpected status: " + statusCode + "\nResponse: " + response.asPrettyString());
         }
     }
@@ -212,7 +213,6 @@ public class ProductAPITesting extends ReponseSetup {
                 .when()
                 .delete("/delProduct/" + id)
                 .then()
-                .log().all()
                 .extract()
                 .response();
 
@@ -230,6 +230,7 @@ public class ProductAPITesting extends ReponseSetup {
         } else if (statusCode == 400 || statusCode == 403 || statusCode == 404 || statusCode == 415) {
             assertThat(response.asString(), containsString("error"));
         } else {
+        	((RequestSpecification) response).log().all();
             throw new AssertionError("Unexpected status: " + statusCode + "\nResponse: " + response.asPrettyString());
         }
     }
