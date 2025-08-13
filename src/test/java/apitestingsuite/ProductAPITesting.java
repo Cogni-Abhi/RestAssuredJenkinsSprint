@@ -56,6 +56,7 @@ public class ProductAPITesting extends ReponseSetup {
                 .when()
                 .post("/addProduct")
                 .then()
+                .log().all()
                 .extract()
                 .response();
 
@@ -86,6 +87,7 @@ public class ProductAPITesting extends ReponseSetup {
                 .when()
                 .get("/getAllProducts")
                 .then()
+                .log().all()
                 .extract()
                 .response();
 
@@ -115,6 +117,7 @@ public class ProductAPITesting extends ReponseSetup {
                 .when()
                 .get("/getProductbyId/" + id)
                 .then()
+                .log().all()
                 .extract()
                 .response();
 
@@ -144,6 +147,7 @@ public class ProductAPITesting extends ReponseSetup {
                 .when()
                 .get("/viewProductByName")
                 .then()
+                .log().all()
                 .extract()
                 .response();
 
@@ -175,6 +179,7 @@ public class ProductAPITesting extends ReponseSetup {
                 .when()
                 .put("/updateProduct/" + id)
                 .then()
+                .log().all()
                 .extract()
                 .response();
 
@@ -207,6 +212,7 @@ public class ProductAPITesting extends ReponseSetup {
                 .when()
                 .delete("/delProduct/" + id)
                 .then()
+                .log().all()
                 .extract()
                 .response();
 
