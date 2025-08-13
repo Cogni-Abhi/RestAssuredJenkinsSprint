@@ -8,71 +8,40 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">1,105</td><td></td><td></td></tr>
+<tr><th colspan="8">Sprint4</th></tr>
+<tr><td><a href="#t0">APITesting</a></td><td class="num">30</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">4,833</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">apitestingsuite.ProductAPITesting</td><td><a href="#m0">viewProductbyId</a></td><td rowspan="2">1755092555199</td><td rowspan="2">148</td></tr><tr class="failedeven"><td><a href="#m1">viewProductbyId</a></td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">apitestingsuite.ProductAPITesting</td><td><a href="#m2">viewProductbyId</a></td><td rowspan="3">1755092554657</td><td rowspan="3">216</td></tr><tr class="passedeven"><td><a href="#m3">viewProductbyId</a></td></tr><tr class="passedeven"><td><a href="#m4">viewProductbyId</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Sprint4</th></tr></tbody><tbody id="t0"><tr><th colspan="4">APITesting &#8212; passed</th></tr><tr class="passedeven"><td rowspan="30">apitestingsuite.ProductAPITesting</td><td><a href="#m0">addProduct</a></td><td rowspan="5">1755093141718</td><td rowspan="5">186</td></tr><tr class="passedeven"><td><a href="#m1">addProduct</a></td></tr><tr class="passedeven"><td><a href="#m2">addProduct</a></td></tr><tr class="passedeven"><td><a href="#m3">addProduct</a></td></tr><tr class="passedeven"><td><a href="#m4">addProduct</a></td></tr><tr class="passedeven"><td><a href="#m5">deleteProdcutbyId</a></td><td rowspan="5">1755093142530</td><td rowspan="5">146</td></tr><tr class="passedeven"><td><a href="#m6">deleteProdcutbyId</a></td></tr><tr class="passedeven"><td><a href="#m7">deleteProdcutbyId</a></td></tr><tr class="passedeven"><td><a href="#m8">deleteProdcutbyId</a></td></tr><tr class="passedeven"><td><a href="#m9">deleteProdcutbyId</a></td></tr><tr class="passedeven"><td><a href="#m10">updateProduct</a></td><td rowspan="5">1755093143411</td><td rowspan="5">144</td></tr><tr class="passedeven"><td><a href="#m11">updateProduct</a></td></tr><tr class="passedeven"><td><a href="#m12">updateProduct</a></td></tr><tr class="passedeven"><td><a href="#m13">updateProduct</a></td></tr><tr class="passedeven"><td><a href="#m14">updateProduct</a></td></tr><tr class="passedeven"><td><a href="#m15">viewAllProducts</a></td><td rowspan="5">1755093144158</td><td rowspan="5">158</td></tr><tr class="passedeven"><td><a href="#m16">viewAllProducts</a></td></tr><tr class="passedeven"><td><a href="#m17">viewAllProducts</a></td></tr><tr class="passedeven"><td><a href="#m18">viewAllProducts</a></td></tr><tr class="passedeven"><td><a href="#m19">viewAllProducts</a></td></tr><tr class="passedeven"><td><a href="#m20">viewProductbyId</a></td><td rowspan="5">1755093144744</td><td rowspan="5">146</td></tr><tr class="passedeven"><td><a href="#m21">viewProductbyId</a></td></tr><tr class="passedeven"><td><a href="#m22">viewProductbyId</a></td></tr><tr class="passedeven"><td><a href="#m23">viewProductbyId</a></td></tr><tr class="passedeven"><td><a href="#m24">viewProductbyId</a></td></tr><tr class="passedeven"><td><a href="#m25">viewProductbyName</a></td><td rowspan="5">1755093145992</td><td rowspan="5">148</td></tr><tr class="passedeven"><td><a href="#m26">viewProductbyName</a></td></tr><tr class="passedeven"><td><a href="#m27">viewProductbyName</a></td></tr><tr class="passedeven"><td><a href="#m28">viewProductbyName</a></td></tr><tr class="passedeven"><td><a href="#m29">viewProductbyName</a></td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">apitestingsuite.ProductAPITesting#viewProductbyId</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{&quot;amount&quot;:45000,&quot;name&quot;:&quot;TV&quot;,&quot;id&quot;:4}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.ClassCastException: class io.restassured.internal.RestAssuredResponseImpl cannot be cast to class io.restassured.specification.RequestSpecification (io.restassured.internal.RestAssuredResponseImpl and io.restassured.specification.RequestSpecification are in unnamed module of loader &apos;app&apos;)
-	at apitestingsuite.ProductAPITesting.viewProductbyId(ProductAPITesting.java:136)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">apitestingsuite.ProductAPITesting#viewProductbyId</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{&quot;amount&quot;:3500,&quot;name&quot;:&quot;Headphone&quot;,&quot;id&quot;:5}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.ClassCastException: class io.restassured.internal.RestAssuredResponseImpl cannot be cast to class io.restassured.specification.RequestSpecification (io.restassured.internal.RestAssuredResponseImpl and io.restassured.specification.RequestSpecification are in unnamed module of loader &apos;app&apos;)
-	at apitestingsuite.ProductAPITesting.viewProductbyId(ProductAPITesting.java:136)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">apitestingsuite.ProductAPITesting#viewProductbyId</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{&quot;amount&quot;:15000,&quot;name&quot;:&quot;Mobile&quot;,&quot;id&quot;:1}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">apitestingsuite.ProductAPITesting#viewProductbyId</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{&quot;amount&quot;:60000,&quot;name&quot;:&quot;Laptop&quot;,&quot;id&quot;:2}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">apitestingsuite.ProductAPITesting#viewProductbyId</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{&quot;amount&quot;:40000,&quot;name&quot;:&quot;SmartTv&quot;,&quot;id&quot;:3}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>APITesting</h2><h3 id="m0">apitestingsuite.ProductAPITesting#addProduct</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{&quot;amount&quot;:15000,&quot;name&quot;:&quot;Mobile&quot;,&quot;id&quot;:1}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">apitestingsuite.ProductAPITesting#addProduct</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{&quot;amount&quot;:3500,&quot;name&quot;:&quot;Headphone&quot;,&quot;id&quot;:5}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">apitestingsuite.ProductAPITesting#addProduct</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{&quot;amount&quot;:60000,&quot;name&quot;:&quot;Laptop&quot;,&quot;id&quot;:2}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">apitestingsuite.ProductAPITesting#addProduct</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{&quot;amount&quot;:40000,&quot;name&quot;:&quot;SmartTv&quot;,&quot;id&quot;:3}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">apitestingsuite.ProductAPITesting#addProduct</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{&quot;amount&quot;:45000,&quot;name&quot;:&quot;TV&quot;,&quot;id&quot;:4}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">apitestingsuite.ProductAPITesting#deleteProdcutbyId</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{&quot;amount&quot;:15000,&quot;name&quot;:&quot;Mobile&quot;,&quot;id&quot;:1}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">apitestingsuite.ProductAPITesting#deleteProdcutbyId</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{&quot;amount&quot;:60000,&quot;name&quot;:&quot;Laptop&quot;,&quot;id&quot;:2}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">apitestingsuite.ProductAPITesting#deleteProdcutbyId</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{&quot;amount&quot;:40000,&quot;name&quot;:&quot;SmartTv&quot;,&quot;id&quot;:3}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">apitestingsuite.ProductAPITesting#deleteProdcutbyId</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{&quot;amount&quot;:3500,&quot;name&quot;:&quot;Headphone&quot;,&quot;id&quot;:5}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">apitestingsuite.ProductAPITesting#deleteProdcutbyId</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{&quot;amount&quot;:45000,&quot;name&quot;:&quot;TV&quot;,&quot;id&quot;:4}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">apitestingsuite.ProductAPITesting#updateProduct</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{&quot;amount&quot;:60000,&quot;name&quot;:&quot;Laptop&quot;,&quot;id&quot;:2}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">apitestingsuite.ProductAPITesting#updateProduct</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{&quot;amount&quot;:45000,&quot;name&quot;:&quot;TV&quot;,&quot;id&quot;:4}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">apitestingsuite.ProductAPITesting#updateProduct</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{&quot;amount&quot;:3500,&quot;name&quot;:&quot;Headphone&quot;,&quot;id&quot;:5}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">apitestingsuite.ProductAPITesting#updateProduct</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{&quot;amount&quot;:15000,&quot;name&quot;:&quot;Mobile&quot;,&quot;id&quot;:1}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">apitestingsuite.ProductAPITesting#updateProduct</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{&quot;amount&quot;:40000,&quot;name&quot;:&quot;SmartTv&quot;,&quot;id&quot;:3}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">apitestingsuite.ProductAPITesting#viewAllProducts</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{&quot;amount&quot;:60000,&quot;name&quot;:&quot;Laptop&quot;,&quot;id&quot;:2}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">apitestingsuite.ProductAPITesting#viewAllProducts</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{&quot;amount&quot;:45000,&quot;name&quot;:&quot;TV&quot;,&quot;id&quot;:4}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">apitestingsuite.ProductAPITesting#viewAllProducts</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{&quot;amount&quot;:40000,&quot;name&quot;:&quot;SmartTv&quot;,&quot;id&quot;:3}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m18">apitestingsuite.ProductAPITesting#viewAllProducts</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{&quot;amount&quot;:15000,&quot;name&quot;:&quot;Mobile&quot;,&quot;id&quot;:1}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m19">apitestingsuite.ProductAPITesting#viewAllProducts</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{&quot;amount&quot;:3500,&quot;name&quot;:&quot;Headphone&quot;,&quot;id&quot;:5}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m20">apitestingsuite.ProductAPITesting#viewProductbyId</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{&quot;amount&quot;:15000,&quot;name&quot;:&quot;Mobile&quot;,&quot;id&quot;:1}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m21">apitestingsuite.ProductAPITesting#viewProductbyId</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{&quot;amount&quot;:60000,&quot;name&quot;:&quot;Laptop&quot;,&quot;id&quot;:2}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m22">apitestingsuite.ProductAPITesting#viewProductbyId</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{&quot;amount&quot;:40000,&quot;name&quot;:&quot;SmartTv&quot;,&quot;id&quot;:3}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m23">apitestingsuite.ProductAPITesting#viewProductbyId</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{&quot;amount&quot;:3500,&quot;name&quot;:&quot;Headphone&quot;,&quot;id&quot;:5}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m24">apitestingsuite.ProductAPITesting#viewProductbyId</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{&quot;amount&quot;:45000,&quot;name&quot;:&quot;TV&quot;,&quot;id&quot;:4}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m25">apitestingsuite.ProductAPITesting#viewProductbyName</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{&quot;amount&quot;:45000,&quot;name&quot;:&quot;TV&quot;,&quot;id&quot;:4}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m26">apitestingsuite.ProductAPITesting#viewProductbyName</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{&quot;amount&quot;:3500,&quot;name&quot;:&quot;Headphone&quot;,&quot;id&quot;:5}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m27">apitestingsuite.ProductAPITesting#viewProductbyName</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{&quot;amount&quot;:40000,&quot;name&quot;:&quot;SmartTv&quot;,&quot;id&quot;:3}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m28">apitestingsuite.ProductAPITesting#viewProductbyName</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{&quot;amount&quot;:15000,&quot;name&quot;:&quot;Mobile&quot;,&quot;id&quot;:1}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m29">apitestingsuite.ProductAPITesting#viewProductbyName</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{&quot;amount&quot;:60000,&quot;name&quot;:&quot;Laptop&quot;,&quot;id&quot;:2}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

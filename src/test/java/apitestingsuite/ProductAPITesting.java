@@ -128,7 +128,7 @@ public class ProductAPITesting extends ReponseSetup {
             assertThat(statusCode, equalTo(200));
             assertThat(response.getHeader("Content-Type"), containsString("application/json"));
             assertThat("ID should be "+id, response.jsonPath().getString("id"), equalTo(id+""));
-        } else if (statusCode == 400 || statusCode == 403 || statusCode == 4 || statusCode == 415) {
+        } else if (statusCode == 400 || statusCode == 403 || statusCode == 404 || statusCode == 415) {
             assertThat(response.asString(), containsString("error"));
         } else {
         	((RequestSpecification) response).log().all();
