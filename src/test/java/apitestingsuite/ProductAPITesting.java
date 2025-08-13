@@ -27,7 +27,14 @@ public class ProductAPITesting extends ReponseSetup {
     public void setupReport() {
         ExtentSparkReporter spark = new ExtentSparkReporter("./extentReport/ProductAPIReport.html");
         extent = new ExtentReports();
+        spark.config().setDocumentTitle("Product API Test Report");
+        spark.config().setReportName("API Automation Suite - Product Module");
+        spark.config().setTheme(com.aventstack.extentreports.reporter.configuration.Theme.DARK);
         extent.attachReporter(spark);
+        extent.setSystemInfo("Project Name", "Product API Testing");
+        extent.setSystemInfo("Environment", "QA");
+        extent.setSystemInfo("Build", "1.0");
+        extent.setSystemInfo("Framework", "Rest Assured + TestNG");
     }
 
     @AfterClass
@@ -221,12 +228,19 @@ public class ProductAPITesting extends ReponseSetup {
         }
     }
 
-    // Helper method for logging
     private void logTestResult(ExtentTest test, int statusCode, Response response) {
-        if (statusCode == 200 || statusCode == 400 || statusCode == 403 || statusCode == 404 || statusCode == 415) {
-            test.pass("Status Code: " + statusCode + "\nResponse: " + response.asPrettyString());
-        } else {
-            test.fail("Unexpected Status: " + statusCode + "\nResponse: " + response.asPrettyString());
+        if (statusCode == 200) {
+            test.pass("Positive Testcase Passed\nStatus Code: " + statusCode +
+                      "\nResponse: " + response.asPrettyString());
+        } 
+        else if (statusCode == 400 || statusCode == 403 || statusCode == 404 || statusCode == 415) {
+            test.pass("Negative Testcase Passed\nStatus Code: " + statusCode +
+                      "\nResponse: " + response.asPrettyString());
+        } 
+        else {
+            test.fail("Unexpected Status\nStatus Code: " + statusCode +
+                      "\nResponse: " + response.asPrettyString());
         }
     }
+
 }
