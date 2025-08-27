@@ -15,7 +15,7 @@ import static org.hamcrest.Matchers.*;
 import java.util.List;
 import java.util.Map;
 
-public class ProductAPITesting extends ReponseSetup {
+public class ProductAPITesting extends ResponseSetup {
     private String accessToken;
     private static ExtentReports extent;
     private static ExtentTest test;

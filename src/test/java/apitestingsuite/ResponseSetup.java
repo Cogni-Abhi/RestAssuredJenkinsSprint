@@ -3,7 +3,7 @@ package apitestingsuite;
 import io.restassured.RestAssured;
 import io.restassured.specification.RequestSpecification;
 
-public class ReponseSetup {
+public class ResponseSetup {
 	protected static RequestSpecification reqSpec;
 	public static void setup() {
 		RestAssured.baseURI = "https://webapps.tekstac.com/OAuthRestApi/webapi";

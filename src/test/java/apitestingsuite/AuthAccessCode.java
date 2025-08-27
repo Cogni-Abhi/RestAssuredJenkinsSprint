@@ -3,7 +3,7 @@ package apitestingsuite;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
-public class AuthAccessCode extends ReponseSetup {
+public class AuthAccessCode extends ResponseSetup {
 
     public static String getAccessToken(String username, String password) {
         String authCode = getAuthCode(username, password);  
