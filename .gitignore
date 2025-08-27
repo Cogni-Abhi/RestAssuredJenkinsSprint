@@ -1,0 +1,14 @@
+# Ignore IDE and workspace settings
+.settings/
+.project
+.classpath
+
+# Ignore reports
+extentReport/
+
+# Ignore build and test outputs
+target/
+test-output/
+
+# Ignore logs and temp files
+*.log
